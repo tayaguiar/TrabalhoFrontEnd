@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consumindo a API viaCep Grupo 3</title>
+
+    <link href="imagens/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+              <img class="logo" src="imagens/logoViaCep.png" alt="logoViaCep">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <form onsubmit="return pesquisacep()" method="get">
+            <div class="form-row">
+            <div class="form-group col-md-9">
+                <label for="cep">Digite o CEP</label>
+                <input
+                name="cep"
+                type="text"
+                id="cep"
+                value=""
+                class="form-control"
+                />
+            </div>
+            <div class="form-group col-md-3">
+                <button name="cep" type="submit" id="cep" class="btn btn-warning">
+                Verificar
+                </button>
+            </div>
+            <br>
+            <div class="form-group col-md-4">
+                <label for="ibge">Cod. IBGE</label>
+                <input
+                name="ibge"
+                type="text"
+                id="ibge"
+                class="form-control"
+                disabled
+                />
+            </div>
+            <div class="form-group col-md-8">
+                <label for="logradouro">Logradouro</label>
+                <input
+                name="logradouro"
+                id="logradouro"
+                type="text"
+                class="form-control"
+                disabled
+                />
+            </div>
+            <div class="form-group col-md-5">
+                <label for="bairro">Bairro</label>
+                <input
+                name="bairro"
+                type="text"
+                id="bairro"
+                class="form-control"
+                disabled
+                />
+            </div>
+            <div class="form-group col-md-5">
+                <label for="cidade">Cidade</label>
+                <input
+                name="cidade"
+                type="text"
+                id="cidade"
+                class="form-control"
+                disabled
+                />
+            </div>
+            <div class="form-group col-md-2">
+                <label for="uf">Estado</label>
+                <input
+                name="uf"
+                type="text"
+                id="uf"
+                class="form-control"
+                disabled
+                />
+            </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-text">Bernardo Bonifácio</span>
+            <span class="navbar-text">Dayane Mafort</span>
+            <span class="navbar-text">Douglas do Amaral</span>
+            <span class="navbar-text">Elaine Dutra</span>
+            <span class="navbar-text">Leonardo Lucas</span>
+            <span class="navbar-text">Natally Silva</span>
+            <span class="navbar-text">Taynara Aguiar</span>
+        </nav>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous">
+    </script>
+    <script src="buscaEndereco.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

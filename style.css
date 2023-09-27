@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    background-image: url(imagens/imagemFundo.png);
+    background-repeat: no-repeat;
+}
+
+main {
+    padding-left: 50px;
+    width: 90%;
+}
+
+.logo {
+    width: 50%;
+}
+
+.btn-warning {
+    color: #585858;
+    background-color: #ffde59;
+    border-color: #0a120b;
+    margin-top: 33px;
+}
+
+.btn-warning:hover,
+.btn-warning:visited {
+    background-color: #585858;
+    border-color: #ffde59;
+    color: #ffde59;
+}
+
+label {
+    color:#e0d9d9;
+}
+
+.navbar span::before {
+    content: "\1F4BB";
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (max-width: 540px) {
+    footer {
+        position: relative;
+    }
+}
