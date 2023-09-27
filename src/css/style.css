@@ -7,8 +7,9 @@
 body {
     width: 100%;
     min-height: 100%;
-    background-image: url(imagens/imagemFundo.png);
+    background-image: url(../img/imagemFundo.png);
     background-repeat: no-repeat;
+    background-color: #323232fa !important;
 }
 
 main {

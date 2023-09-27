@@ -65,7 +65,7 @@ if (cep != "") {
         Swal.fire(
             'Formato inválido.',
             'Confira o CEP digitado',
-            'info'
+            'warning'
           )
     }
     return false;
