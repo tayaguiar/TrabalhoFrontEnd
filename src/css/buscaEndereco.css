@@ -21,6 +21,7 @@ main {
     width: 50%;
 }
 
+.btn-outline-warning,
 .btn-warning {
     color: #585858;
     background-color: #ffde59;
@@ -39,9 +40,6 @@ label {
     color:#e0d9d9;
 }
 
-.navbar span::before {
-    content: "\1F4BB";
-}
 
 footer {
     width: 100%;
@@ -49,8 +47,15 @@ footer {
     bottom: 0;
 }
 
+.navbar {
+    padding: 0 50px !important;
+}
+
 @media screen and (max-width: 540px) {
     footer {
         position: relative;
+    }
+    .navbar {
+        padding: 10px !important;
     }
 }
