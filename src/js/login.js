@@ -11,7 +11,7 @@ function login() {
     for (const user of Usuarios) {
       if (user.nome === name && user.senha === password) {
         console.log("Login bem-sucedido!");
-        window.location.href = "/trabalhoFinalGrupo3/src/html/buscaEndereco.html";
+        window.location.href = "./src/html/buscaEndereco.html";
         usuarioEncontrado = true;
         break;
       }
