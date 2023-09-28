@@ -143,5 +143,5 @@ let inputCEP = document.getElementById("cep");
 inputCEP.addEventListener("input", atualizarCEP);
 
 function pagLogin(){
-  window.location.href = "/trabalhoFinalGrupo3/login.html";
+  window.location.href = "../../login.html";
 }

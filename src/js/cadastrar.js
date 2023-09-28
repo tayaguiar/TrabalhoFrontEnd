@@ -58,7 +58,7 @@ function cadastrar() {
       senha: senha.value,
     });
     localStorage.setItem("Usuarios", JSON.stringify(Usuarios));
-    window.location.href = "/trabalhoFinalGrupo3/login.html";
+    window.location.href = "../../login.html";
   } else {
     Swal.fire({
       icon: "error",
